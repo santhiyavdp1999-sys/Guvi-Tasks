@@ -1,11 +1,18 @@
 
 # 1. Even number and odd number
-num=int(input("Enter the Number:"))
 
-if num%2==0:
-     print("Even Number")
-else:
-     print("Odd Number")
+
+l=[10,501,22,37,100,999,87,351]
+even_number=[]
+odd_number=[]
+for i in l:
+    if i%2==0:
+        even_number.append(i)
+    else:
+        odd_number.append(i)
+print(even_number)
+print(odd_number)
+
 
 # 2. Count of all the Prime Number
 
