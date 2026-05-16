@@ -22,6 +22,27 @@ square_of_evens = [x**2 for x in numbers if is_even(x)]
 print(square_of_evens)
 
 
-# 4. 
+# 4. write a lambda function to check if a given string is a number
+
+is_number=lambda s: s.isdigit()
+print(is_number("123"))
+print(is_number("4.5"))
+print(is_number("-12"))
+
+
+# 5. use a lambda function to extract the year, month and day from a datetime object.
+
+from datetime import datetime
+
+dt = datetime(2026, 5, 16, 14, 30, 45)
+
+get_year = lambda d: d.year
+get_month = lambda d: d.month
+get_day = lambda d: d.day
+
+print("Datetime:", dt)
+print("Year:", get_year(dt))
+print("Month:", get_month(dt))
+print("Day:", get_day(dt))
 
 
